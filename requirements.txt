@@ -1,0 +1,7 @@
+# Core analysis (ELF parsing, string/shellcode/security checks) needs
+# nothing but the standard library.
+#
+# Optional, for extra coverage:
+capstone>=5.0      # disassembly-based detectors: ROP gadgets, integer overflow,
+                    # off-by-one, disassembly-based format-string detection
+pefile>=2023.2.7    # richer PE (Windows) import parsing

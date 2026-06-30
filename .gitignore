@@ -1,0 +1,86 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Editors / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- PwnHunter project-specific ---
+# Generated reports
+report.json
+*.report.json
+*_report.json
+
+# Binaries used for testing / scanning (avoid committing target ELF/PE samples)
+*.bin
+*.elf
+*.exe
+samples/
+targets/
+binaries/
+
+# Compiled test fixtures (from test_elf_parser.py gcc builds)
+tests/fixtures/*.out
+tests/fixtures/*.o
+*.out
+*.o
+
+# Disassembly / debug dumps
+*.asm.txt
+*.dump

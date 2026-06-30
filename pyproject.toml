@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pwnhunter"
+version = "2.0.0"
+description = "Modular static binary vulnerability analyzer for CTF/pwn use."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+disasm = ["capstone>=5.0"]
+pe = ["pefile>=2023.2.7"]
+full = ["capstone>=5.0", "pefile>=2023.2.7"]
+
+[project.scripts]
+pwnhunter = "pwnhunter.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pwnhunter*"]
