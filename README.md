@@ -8,7 +8,7 @@ A modular Python tool that scans ELF (primary) and PE binaries for common exploi
 
 ## Author
 
-**m0r3n0**
+**4n0ny_m0**
 
 ---
 
